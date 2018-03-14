@@ -50,3 +50,9 @@ class JanitorDataFrame(DataFrame):
 
     def fill_empty(self, columns, value):
         return fill_empty(self, columns, value)
+
+    def rename_index(self, name):
+        return rename_index(self, name)
+
+    def drop_index_level(self, level):
+        return drop_index_level(self, level)
