@@ -314,3 +314,13 @@ def fill_empty(df, columns, value):
         raise JanitorError('kwarg `columns` must be a string or iterable!')
 
     return df
+
+
+def rename_index(df, name):
+    df.index.rename(name, inplace=True)
+    return df
+
+
+def drop_index_level(df, level=0):
+    df.index = df.index.drop_level(level=level)
+    return df
