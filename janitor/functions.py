@@ -428,6 +428,9 @@ def expand_column(df, column, sep, concat=True):
 
     Super sugary syntax that wraps :py:meth:`pandas.Series.str.get_dummies`.
 
+    Kudos to @beth-thorpe for showing me the kind of data that would warrant
+    this function.
+
     Functional usage example:
 
     .. code-block:: python
